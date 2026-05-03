@@ -94,22 +94,6 @@ the community.
                 <p>Fill out our order form and we'll get back to you as soon as possible</p>
                 <a href="https://forms.gle/K92haZNCJCFTqZo49" class="order-btn" target="_blank">Open Order Form ↗</a>
             </div>
-            <div id="orders"></div>
-
-<script>
-fetch("http://localhost:3000/orders")
-  .then(res => res.json())
-  .then(data => {
-    const container = document.getElementById("orders");
-
-    data.forEach(order => {
-      const div = document.createElement("div");
-      div.innerText = order.join(" | ");
-      container.appendChild(div);
-    });
-  });
-</script>
-        </div>
     </section>
 
     <section id="gallery" class="section gray-bg">
