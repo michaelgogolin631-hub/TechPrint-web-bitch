@@ -97,7 +97,7 @@ the community.
             <div id="orders"></div>
 
 <script>
-fetch("https://techprint-printing-services.onrender.com/orders")
+fetch("http://localhost:3000/orders")
   .then(res => res.json())
   .then(data => {
     const container = document.getElementById("orders");
